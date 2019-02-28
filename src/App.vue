@@ -1,17 +1,13 @@
 <template>
   <v-app>
     <v-toolbar app>
-      <v-toolbar-title class="headline text-uppercase">
-        <span>Vuetify</span>
-        <span class="font-weight-light">MATERIAL DESIGN</span>
+      <v-toolbar-title>
+        <span>V</span>
+        <span class="font-weight-light">CUSTOM CARDS</span>
       </v-toolbar-title>
       <v-spacer></v-spacer>
-      <v-btn
-        flat
-        href="https://github.com/vuetifyjs/vuetify/releases/latest"
-        target="_blank"
-      >
-        <span class="mr-2">Latest Release</span>
+      <v-btn flat>
+        <span class="mr-2">Development Version</span>
       </v-btn>
     </v-toolbar>
 
@@ -22,17 +18,24 @@
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld'
+import HelloWorld from "./components/HelloWorld";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
     HelloWorld
   },
-  data () {
+  data() {
     return {
       //
-    }
+    };
   }
-}
+};
 </script>
+
+<style scoped>
+* {
+  color: var(--v-primary-base);
+  background-color: var(--v-secondary-base);
+}
+</style>
